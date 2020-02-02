@@ -1,0 +1,19 @@
+{
+  "bindings": [
+    {
+      "name": "myTimer",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "0 */5 * * * *"
+    },
+    {
+      "type": "cosmosDB",
+      "name": "outputDocument",
+      "databaseName": "gh-issues",
+      "collectionName": "open-issues",
+      "createIfNotExists": false,
+      "connectionStringSetting": "gh-issue_DOCUMENTDB",
+      "direction": "out"
+    }
+  ]
+}

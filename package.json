@@ -1,0 +1,28 @@
+{
+  "name": "github-count",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "prestart": "npm run build",
+    "start": "func start",
+    "test": "echo \"No tests yet...\""
+  },
+  "devDependencies": {
+    "@azure/functions": "^1.0.2-beta2",
+    "typescript": "^3.3.3"
+  },
+  "keywords": [
+    "github",
+    "azure",
+    "functions",
+    "issues"
+  ],
+  "author": "Sajeetharan",
+  "dependencies": {
+    "@types/node": "^13.7.0",
+    "bluebird": "^3.4.7",
+    "gh-issues-api": "0.0.2"
+  }
+}
